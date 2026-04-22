@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VAT Threshold Checker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="menu">
+<a href="index.html">Calculator</a>
+<a href="vat-guide.html">VAT Guide</a>
+<a href="vat-threshold-checker.html">Threshold Checker</a>
+<a href="vat201-help.html">VAT201 Help</a>
+</nav>
+
+<div class="container">
+
+<h1>VAT Registration Threshold Checker</h1>
+
+<input id="turnover"
+type="number"
+placeholder="Enter annual turnover">
+
+<button onclick="checkThreshold()">
+Check Threshold
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+function checkThreshold(){
+
+let t=
+parseFloat(
+document.getElementById("turnover").value
+)||0;
+
+if(t>=1000000){
+document.getElementById("result").innerHTML=
+"Registration may be required.";
+}
+else{
+document.getElementById("result").innerHTML=
+"Below compulsory VAT threshold.";
+}
+
+}
+</script>
+
+</body>
+</html>

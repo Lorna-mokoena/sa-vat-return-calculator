@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>SA VAT Return Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<nav class="menu">
+<a href="index.html">VAT Calculator</a>
+<a href="vat-guide.html">VAT Guide</a>
+<a href="vat-threshold-checker.html">Threshold Checker</a>
+<a href="vat201-help.html">VAT201 Help</a>
+</nav>
+<body>
+
+<div class="container">
+<h1>South African VAT Return Calculator</h1>
+
+<div class="card">
+<h2>Output VAT (Sales)</h2>
+
+<input id="sales"
+type="number"
+placeholder="Enter taxable sales">
+
+<button onclick="calculateVAT()">
+Calculate VAT
+</button>
+
+<h2>Input VAT (Expenses)</h2>
+
+<input id="expenses"
+type="number"
+placeholder="Enter deductible expenses">
+
+<div id="results"></div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
