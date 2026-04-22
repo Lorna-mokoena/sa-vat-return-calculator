@@ -11,7 +11,7 @@ A simple and free web tool to help South African businesses and freelancers calc
 - Simple and mobile-friendly design
 
 ## Live Demo
-file:///D:/New%20folder/sa-vat-calculator/index.html
+https://your-username.github.io/sa-vat-return-calculator
 
 ## Purpose
 This tool helps users understand and estimate their VAT obligations under SARS regulations.
